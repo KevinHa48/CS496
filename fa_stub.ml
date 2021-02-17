@@ -33,6 +33,17 @@ let a2 = {states = ["q0";"q1";"q2";"q3";"q4"];
                ; ("q1",'c',"q2");  ("q3",'a',"q4")];
           final= ["q2"]
          }
+
+let a3 = {states = ["q0";"q1";"q2"];
+         start = "q0";
+         tf = [("q0",'a',"q1"); ("q1",'b',"q1"); ("q1",'c',"q2"); ("q2", 'd', "q3")];
+         final = ["q2"; "q3"]}
+
+let a4 = {states = ["q0"];
+         start = "q0";
+         tf = [("q0",'a',"q0")];
+         final = []}
+
 let tf_of_a = [("q0",'a',"q1"); ("q1",'b',"q1"); ("q1",'c',"q2")]
 
 let nfa = {states = ["q0";"q1";"q2";"q3"];
@@ -40,10 +51,10 @@ let nfa = {states = ["q0";"q1";"q2";"q3"];
          tf = [("q0",'a',"q1"); ("q0", 'a', "q3"); ("q1",'b',"q1"); ("q1",'c',"q2")];
          final = ["q2";"q3"]}
 
-let nfa2 = {states = ["q0";"q1";"q2";"q3"];
-         start = "q0";
-         tf = [("q0",'a',"q1"); ("q0", 'a', "q3"); ("q1",'b',"q1"); ("q1",'c',"q2"); ("q1",'b',"q3")];
-         final = ["q2";"q3"]}
+let nfa2 = {states = ["q0";"q1";"q2";"q3"; "q4"];
+         start = "q1";
+         tf = [("q0",'a',"q1"); ("q0", 'a', "q3"); ("q0", 'a', "q4"); ("q1",'b',"q1"); ("q1",'c',"q2"); ("q1",'b',"q3")];
+         final = ["q2";"q3"; "q4"]}
 
 
 (* ******************************************** *)
@@ -104,13 +115,28 @@ let rec deterministic (finAuto: fa) : bool =
     List.length (next f q s) <= 1 && check tl
   in
   check finAuto.tf
-(*
-let rec valid (finAuto: fa) : bool =
-  match fa.states with 
-  | [] -> false
-  | 
 
-*)
+let valid (finAuto: fa) : bool =
+  let rec subset l = 
+    match l with
+    | [] -> true
+    | h::tl ->
+    List.mem h finAuto.states && subset tl
+  in
+  subset (finAuto.start::finAuto.final) && deterministic finAuto
+  
+let reachable (finAuto: fa) : state list =
+  let rec reachHelp l =
+    match l with 
+    | [] -> []
+    | (q, s, f)::tl ->
+    if q = finAuto.start 
+    then f::[] @ reachHelp tl
+    else reachHelp tl
+  in
+  reachHelp finAuto.tf
+
+
 (*
 The strategy for deterministic: 
 1. Utilize apply trans_fun
@@ -120,3 +146,14 @@ The strategy for deterministic:
 5. Next utilize maybe at_least_two for the list you created
 6. If true -> true, else false.
 *)
+
+(*
+The strat for valid:
+1. Cons together the start and the final states
+2. Build a subset helper function that will check if that appended list is a subset
+of the automata's state list.
+3. And that bool with determinstic.
+
+*)
+
+(* TODO: Ask about no final states... *)
