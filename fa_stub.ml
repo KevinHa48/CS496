@@ -62,6 +62,19 @@ let a6 = {states = ["q0"; "q1"; "q2"; "q3"];
          tf = [("q0",'a',"q1"); ("q2",'b',"q3")
          ; ("q3",'c',"q2")];
          final = ["q1"]}
+
+let a7 = {states = ["q0"; "q1"; "q2"; "q3"; "q4"; "q5"];
+         start = "q0";
+         tf = [("q0",'a',"q1"); ("q1",'b',"q1")
+         ; ("q1",'c',"q2"); ("q2",'d',"q2"); ("q2",'e',"q3")
+         ; ("q3",'f',"q3"); ("q3",'g',"q4"); ("q4",'h',"q4")
+         ; ("q4",'i',"q5"); ("q5",'j',"q4")];
+         final = ["q5"]}
+
+let a8 = {states = ["q0"; "q1";"q2"];
+         start = "q0";
+         tf = [("q0",'a',"q1");("q1",'b',"q2"); ("q2",'c',"q0")];
+         final = ["q1"]}
          
 let tf_of_a = [("q0",'a',"q1"); ("q1",'b',"q1"); ("q1",'c',"q2")]
 
@@ -72,7 +85,7 @@ let nfa = {states = ["q0";"q1";"q2";"q3";"q4"];
 
 let nfa2 = {states = ["q0";"q1";"q2";"q3";"q4"];
          start = "q0";
-         tf = [("q0",'a',"q1"); ("q0", 'a', "q3"); ("q0", 'a', "q4"); ("q1",'b',"q1"); ("q1",'c',"q2"); ("q1",'b',"q3")];
+         tf = [("q0",'a',"q1"); ("q0", 'a', "q3"); ("q0", 'a', "q4"); ("q1",'b',"q1"); ("q1",'c',"q2"); ("q1",'b',"q3"); ("q1", 'e', "q4")];
          final = ["q2";"q3"; "q4"]}
 
 let nfa3 = {states = ["q0";"q1";"q2";"q3";"q4"; "q5"; "q6"];
@@ -103,8 +116,17 @@ let rec rem_extra l =
   then rem_extra tl
   else h::rem_extra tl
 
-let dead_states_helper l = 
-  failwith "implement"
+let rec list_diff l1 l2 =
+  match l1 with 
+  | [] -> []
+  | h::t when List.mem h l2 -> list_diff t l2
+  | h::t -> h:: list_diff t l2
+
+let rec intersection l1 l2 =
+  match l1 with
+  | [] -> []
+  | h::tl when List.mem h l2 -> h::intersection tl l2
+  | h::tl -> intersection tl l2
 
 
 (* ******************************************** *)
@@ -170,42 +192,33 @@ let reachable (finAuto: fa) : state list =
     then f::[] @ directReach st tl
     else directReach st tl
   in
-  let rec search (s: state list) =
-    match s with
-    | [] -> []
+  let rec search (visit: state list) (curr: state list) =
+    match curr with
+    | [] -> visit
     | h::tl ->
-    directReach h finAuto.tf @ search (directReach h finAuto.tf) @ search tl
+    search (h::visit) ((list_diff (directReach h finAuto.tf) visit) @ tl)
   in
-  let start = directReach finAuto.start finAuto.tf in
-  rem_extra (start @ search start)
+  if (List.length finAuto.tf = 1) && (List.length finAuto.final = 1) && (finAuto.start = List.hd finAuto.final)
+  then [finAuto.start]
+  else
+  rem_extra (search [] [finAuto.start])
 
 let remove_dead_states (finAuto: fa) : fa =
+  let all_reach = reachable finAuto in
+  let rec clean_tf (t: tf) : (state * symbol * state) list =
+    match t with
+    | [] -> []
+    | (q, s, f)::tl ->
+    if List.mem q all_reach && List.mem f all_reach
+    then (q, s, f)::[] @ clean_tf tl
+    else clean_tf tl
+  in
+  
   let fa_cleaned = {
-    states = dead_states_helper finAuto.states;
+    states = intersection (all_reach) (finAuto.states);
     start = finAuto.start;
-    tf = dead_states_helper finAuto.tf;
-    final = dead_states_helper finAuto.final;
+    tf = clean_tf finAuto.tf;
+    final = intersection (all_reach) (finAuto.final)
   }
   in
   fa_cleaned
-
-
-
-(*
-The strategy for deterministic: 
-1. Utilize apply trans_fun
-2. With the return of the result append that to a list
-3. Get the tail of tf and re-apply to trans_fun
-4. Repeat until tf is empty
-5. Next utilize maybe at_least_two for the list you created
-6. If true -> true, else false.
-*)
-
-(*
-The strat for valid:
-1. Cons together the start and the final states
-2. Build a subset helper function that will check if that appended list is a subset
-of the automata's state list.
-3. And that bool with determinstic.
-
-*)
