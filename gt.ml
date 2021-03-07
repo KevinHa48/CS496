@@ -28,14 +28,6 @@ let t : int gt =
                Node (103, [])])
        ])
 
-let t_perfect : int gt =
- Node (33,
-       [Node (12,[]);
-        Node (77,[])
-       ])
-
-let t2 : int gt = 
- Node (33, [Node (27, [Node (14, [Node (22, [Node(25, [])])]); Node(18, [])]); Node(96, [Node(7, [])])]) 
 
 let rec height t =
   match t with 
@@ -51,6 +43,7 @@ let rec size t =
   1 + (List.fold_right (fun x y -> x + y) 
       (List.map size ct) 0)
 
+(* Note to self: mapi is very handy for indexing!*)
 let rec paths_to_leaves t =
   match t with 
   | Node(d, []) -> [[]]
