@@ -1,0 +1,133 @@
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Runner: processes
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Chooser: simple
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration suite_name = "graded test suite"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration cache_filename = "/home/tum/CS496/HWAssignments/specialAssignment2/_build/default/test/oUnit-$(suite_name).cache"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration run_gc_full_major = "true"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration display = "true"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration results_style_1_X = "false"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration testdata_dir = "none"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration health_check_interval = "1."
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration verbose = "false"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration chooser = "simple"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration output_html_dir = "none"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration processes_kill_period = "5."
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration runner = "processes"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration shards = "6"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration processes_grace_period = "5."
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration log_encoding = "utf-8"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration output_junit_file = "none"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration ci = "false"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Configuration output_file = "/home/tum/CS496/HWAssignments/specialAssignment2/_build/default/test/oUnit-$(suite_name)-$(shard_id).log"
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Using 6 workers maximum.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Starting worker number DESKTOP-2FIV8I4#01.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#01 started.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Starting worker number DESKTOP-2FIV8I4#02.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#02 started.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Starting worker number DESKTOP-2FIV8I4#03.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#03 started.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Starting worker number DESKTOP-2FIV8I4#04.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#04 started.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Starting worker number DESKTOP-2FIV8I4#05.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#05 started.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Starting worker number DESKTOP-2FIV8I4#06.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#06 started.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 6 tests running: graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1, graded test suite:2:create-object, graded test suite:1:create-class-with-field-and-method, graded test suite:0:create-empty-class.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#01 I: Start test graded test suite:0:create-empty-class.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#02 I: Start test graded test suite:1:create-class-with-field-and-method.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#03 I: Start test graded test suite:2:create-object.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#04 I: Start test graded test suite:3:simple1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#05 I: Start test graded test suite:4:field_and_param_scope1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 6 tests running: graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1, graded test suite:2:create-object, graded test suite:1:create-class-with-field-and-method, graded test suite:0:create-empty-class.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#01 I: Test graded test suite:0:create-empty-class is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#02 I: Test graded test suite:1:create-class-with-field-and-method is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 6 tests running: graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1, graded test suite:2:create-object, graded test suite:1:create-class-with-field-and-method, graded test suite:0:create-empty-class.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#01 I: End test graded test suite:0:create-empty-class.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#02 I: End test graded test suite:1:create-class-with-field-and-method.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 6 tests running: graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1, graded test suite:2:create-object, graded test suite:1:create-class-with-field-and-method, graded test suite:0:create-empty-class.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 6 tests running: graded test suite:7:counter-1, graded test suite:6:self1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1, graded test suite:2:create-object.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#06 I: Start test graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#02 I: Start test graded test suite:6:self1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#01 I: Start test graded test suite:7:counter-1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 6 tests running: graded test suite:7:counter-1, graded test suite:6:self1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1, graded test suite:2:create-object.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#03 I: Test graded test suite:2:create-object is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 6 tests running: graded test suite:7:counter-1, graded test suite:6:self1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1, graded test suite:2:create-object.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#03 I: End test graded test suite:2:create-object.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 6 tests running: graded test suite:7:counter-1, graded test suite:6:self1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1, graded test suite:2:create-object.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 6 tests running : graded test suite:8:sharedf-counter, graded test suite:7:counter-1, graded test suite:6:self1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 6 tests running: graded test suite:8:sharedf-counter, graded test suite:7:counter-1, graded test suite:6:self1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#04 I: Test graded test suite:3:simple1 is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#02 I: Test graded test suite:6:self1 is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#03 I: Start test graded test suite:8:sharedf-counter.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 6 tests running : graded test suite:8:sharedf-counter, graded test suite:7:counter-1, graded test suite:6:self1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 6 tests running: graded test suite:8:sharedf-counter, graded test suite:7:counter-1, graded test suite:6:self1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#04 I: End test graded test suite:3:simple1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#02 I: End test graded test suite:6:self1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 6 tests running : graded test suite:8:sharedf-counter, graded test suite:7:counter-1, graded test suite:6:self1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 6 tests running: graded test suite:8:sharedf-counter, graded test suite:7:counter-1, graded test suite:6:self1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1, graded test suite:3:simple1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#01 I: Test graded test suite:7:counter-1 is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 4 tests running : graded test suite:8:sharedf-counter, graded test suite:7:counter-1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 4 tests running: graded test suite:8:sharedf-counter, graded test suite:7:counter-1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#01 I: End test graded test suite:7:counter-1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 4 tests running : graded test suite:8:sharedf-counter, graded test suite:7:counter-1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 4 tests running: graded test suite:8:sharedf-counter, graded test suite:7:counter-1, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#05 I: Test graded test suite:4:field_and_param_scope1 is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 3 tests running : graded test suite:8:sharedf-counter, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 3 tests running: graded test suite:8:sharedf-counter, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#05 I: End test graded test suite:4:field_and_param_scope1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 3 tests running : graded test suite:8:sharedf-counter, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 3 tests running: graded test suite:8:sharedf-counter, graded test suite:5:send-msg1, graded test suite:4:field_and_param_scope1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 2 tests running : graded test suite:8:sharedf-counter, graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 2 tests running: graded test suite:8:sharedf-counter, graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#03 I: Test graded test suite:8:sharedf-counter is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 2 tests running : graded test suite:8:sharedf-counter, graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 2 tests running: graded test suite:8:sharedf-counter, graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#03 I: End test graded test suite:8:sharedf-counter.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 2 tests running : graded test suite:8:sharedf-counter, graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 2 tests running: graded test suite:8:sharedf-counter, graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 1 tests running : graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 1 tests running: graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#06 I: Test graded test suite:5:send-msg1 is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 1 tests running : graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 1 tests running: graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#06 I: End test graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Still 1 tests running : graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 1 tests running: graded test suite:5:send-msg1.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: 0 tests running: .
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#04 has ended.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#02 has ended.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#01 has ended.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#05 has ended.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#03 has ended.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Worker DESKTOP-2FIV8I4#06 has ended.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Used 6 worker during test execution.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Run 2 tests with shard DESKTOP-2FIV8I4#02.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Run 1 tests with shard DESKTOP-2FIV8I4#04.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Run 1 tests with shard DESKTOP-2FIV8I4#05.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Run 2 tests with shard DESKTOP-2FIV8I4#01.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Run 2 tests with shard DESKTOP-2FIV8I4#03.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Run 1 tests with shard DESKTOP-2FIV8I4#06.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Check health of shard DESKTOP-2FIV8I4#02, 11 times.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Check health of shard DESKTOP-2FIV8I4#04, 11 times.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Check health of shard DESKTOP-2FIV8I4#05, 7 times.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Check health of shard DESKTOP-2FIV8I4#01, 9 times.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Check health of shard DESKTOP-2FIV8I4#03, 4 times.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Check health of shard DESKTOP-2FIV8I4#06, 1 times.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: ==============
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Summary:
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Test graded test suite:5:send-msg1 is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Test graded test suite:8:sharedf-counter is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Test graded test suite:4:field_and_param_scope1 is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Test graded test suite:7:counter-1 is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Test graded test suite:6:self1 is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Test graded test suite:3:simple1 is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Test graded test suite:2:create-object is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Test graded test suite:1:create-class-with-field-and-method is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Test graded test suite:0:create-empty-class is successful.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Ran: 9 tests in: 0.10 seconds.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Cases: 9.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Tried: 9.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Errors: 0.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Failures: 0.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Skip: 0.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Todo: 0.
+2021-05-10T18:23:08+00:00 DESKTOP-2FIV8I4#00 I: Timeout: 0.
